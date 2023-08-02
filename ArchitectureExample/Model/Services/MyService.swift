@@ -14,7 +14,7 @@ protocol MyServiceProtocol {
 final class MyService: MyServiceProtocol {
     private let client: NetworkClientProtocol
     
-    init(client: NetworkClientProtocol = NetworkClient()) {
+    init(client: NetworkClientProtocol = URLSessionClient()) {
         self.client = client
     }
     

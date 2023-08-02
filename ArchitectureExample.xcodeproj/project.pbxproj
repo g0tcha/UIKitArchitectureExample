@@ -16,7 +16,7 @@
 		D24384DE2A61C4E200086896 /* ArchitectureExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384DD2A61C4E200086896 /* ArchitectureExampleTests.swift */; };
 		D24384E82A61C4E200086896 /* ArchitectureExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384E72A61C4E200086896 /* ArchitectureExampleUITests.swift */; };
 		D24384EA2A61C4E200086896 /* ArchitectureExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384E92A61C4E200086896 /* ArchitectureExampleUITestsLaunchTests.swift */; };
-		D24384F92A61C4F800086896 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384F82A61C4F800086896 /* NetworkClient.swift */; };
+		D24384F92A61C4F800086896 /* URLSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384F82A61C4F800086896 /* URLSessionClient.swift */; };
 		D24384FC2A61C6AC00086896 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384FB2A61C6AC00086896 /* MyService.swift */; };
 		D24384FF2A61C8C600086896 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24384FE2A61C8C600086896 /* RequestProtocol.swift */; };
 		D24385012A61C8F100086896 /* MyServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24385002A61C8F100086896 /* MyServiceRequest.swift */; };
@@ -55,7 +55,7 @@
 		D24384E32A61C4E200086896 /* ArchitectureExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24384E72A61C4E200086896 /* ArchitectureExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureExampleUITests.swift; sourceTree = "<group>"; };
 		D24384E92A61C4E200086896 /* ArchitectureExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D24384F82A61C4F800086896 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D24384F82A61C4F800086896 /* URLSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionClient.swift; sourceTree = "<group>"; };
 		D24384FB2A61C6AC00086896 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
 		D24384FE2A61C8C600086896 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		D24385002A61C8F100086896 /* MyServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServiceRequest.swift; sourceTree = "<group>"; };
@@ -88,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D224D45B2A79859D005B83B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D24384C62A61C4E100086896 /* AppDelegate.swift */,
+				D24384C82A61C4E100086896 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D224D45C2A7985AA005B83B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D24384D12A61C4E100086896 /* LaunchScreen.storyboard */,
+				D24384CF2A61C4E100086896 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D24384BA2A61C4E100086896 = {
 			isa = PBXGroup;
 			children = (
@@ -111,13 +129,11 @@
 		D24384C52A61C4E100086896 /* ArchitectureExample */ = {
 			isa = PBXGroup;
 			children = (
+				D224D45C2A7985AA005B83B4 /* Resources */,
+				D224D45B2A79859D005B83B4 /* App */,
 				D24384F62A61C4E900086896 /* Model */,
-				D24384C62A61C4E100086896 /* AppDelegate.swift */,
-				D24384C82A61C4E100086896 /* SceneDelegate.swift */,
 				D24384CA2A61C4E100086896 /* ViewController.swift */,
 				D24384CC2A61C4E100086896 /* Main.storyboard */,
-				D24384CF2A61C4E100086896 /* Assets.xcassets */,
-				D24384D12A61C4E100086896 /* LaunchScreen.storyboard */,
 				D24384D42A61C4E200086896 /* Info.plist */,
 			);
 			path = ArchitectureExample;
@@ -152,7 +168,7 @@
 		D24384F72A61C4EF00086896 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D24384F82A61C4F800086896 /* NetworkClient.swift */,
+				D24384F82A61C4F800086896 /* URLSessionClient.swift */,
 				D24384FE2A61C8C600086896 /* RequestProtocol.swift */,
 			);
 			path = Network;
@@ -306,7 +322,7 @@
 				D24384FF2A61C8C600086896 /* RequestProtocol.swift in Sources */,
 				D24385012A61C8F100086896 /* MyServiceRequest.swift in Sources */,
 				D24384C92A61C4E100086896 /* SceneDelegate.swift in Sources */,
-				D24384F92A61C4F800086896 /* NetworkClient.swift in Sources */,
+				D24384F92A61C4F800086896 /* URLSessionClient.swift in Sources */,
 				D24385032A61C91300086896 /* MyServiceData.swift in Sources */,
 				D24385052A61C9D500086896 /* MyServiceMapper.swift in Sources */,
 			);

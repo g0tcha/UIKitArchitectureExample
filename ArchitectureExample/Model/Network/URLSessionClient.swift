@@ -16,7 +16,8 @@ protocol NetworkClientProtocol {
     func getData(from request: RequestProtocol, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
-final class NetworkClient: NetworkClientProtocol {
+final class URLSessionClient: NetworkClientProtocol {
+    
     private let session: URLSession
     
     init(session: URLSession = URLSession.shared) {
